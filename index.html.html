@@ -1,0 +1,362 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Escrevente TJ-SP Leis</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+<style>
+/* Layout: sticky tab bar; mind map as nested branches; flashcards as one large flipping card with filter chips. */
+:root{
+  --bg:#f5f6f4; --surface:#ffffff; --fg:#17211f; --muted:#5a6663; --line:#d9dfdc;
+  --accent:#0f5c52; --accent-fg:#ffffff; --mark:#f0b429; --mark-bg:#fdf1cf; --ok:#2b7a3d; --warn:#a14a12;
+  --f-head:'Newsreader',Georgia,'Times New Roman',serif; --f-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101714; --surface:#17211e; --fg:#e8eeeb; --muted:#9aa8a3; --line:#2a3733;
+  --accent:#5fc7b4; --accent-fg:#06201b; --mark:#f0b429; --mark-bg:#3a2f10; --ok:#74c786; --warn:#e69a62; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101714; --surface:#17211e; --fg:#e8eeeb; --muted:#9aa8a3; --line:#2a3733;
+  --accent:#5fc7b4; --accent-fg:#06201b; --mark:#f0b429; --mark-bg:#3a2f10; --ok:#74c786; --warn:#e69a62; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.55;
+  padding-block:0 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:920px;margin:0 auto}
+header{padding-block:28px 12px}
+h1{font-family:var(--f-head);font-weight:600;font-size:clamp(28px,5vw,40px);line-height:1.1;margin:0 0 8px;text-wrap:balance}
+header p{margin:0;color:var(--muted);max-width:65ch}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;display:flex;gap:6px;padding-block:10px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.tabs button{font:inherit;font-weight:500;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:6px;padding:8px 14px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-fg)}
+button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section.panel{padding-block:22px}
+.note{background:var(--mark-bg);border-left:4px solid var(--mark);padding:12px 14px;border-radius:0 6px 6px 0;margin:0 0 20px;max-width:75ch}
+.note b{font-weight:600}
+
+/* mind map */
+.root{display:inline-block;background:var(--accent);color:var(--accent-fg);font-family:var(--f-head);font-size:19px;font-weight:600;padding:10px 16px;border-radius:8px;margin-bottom:6px}
+.tree{margin:0;padding:0 0 0 18px;list-style:none;border-left:2px solid var(--accent)}
+.tree>li{position:relative;padding:6px 0 6px 18px}
+.tree>li::before{content:"";position:absolute;left:-20px;top:24px;width:20px;border-top:2px solid var(--accent)}
+details.branch{background:var(--surface);border:1px solid var(--line);border-radius:8px}
+details.branch>summary{cursor:pointer;list-style:none;padding:11px 14px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+details.branch>summary::-webkit-details-marker{display:none}
+details.branch>summary::before{content:"+";font-weight:600;color:var(--accent);width:14px}
+details.branch[open]>summary::before{content:"–"}
+.bname{font-family:var(--f-head);font-size:18px;font-weight:600}
+.bart{font-size:13px;color:var(--muted)}
+.bbody{padding:0 14px 14px 38px;display:grid;gap:10px}
+.twig{margin:0;padding:0;list-style:none;display:grid;gap:6px;border-left:2px solid var(--line);padding-left:12px}
+.twig li{position:relative}
+.twig b{font-weight:600}
+.edital{font-size:13px;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px;color:var(--muted)}
+.edital b{color:var(--fg)}
+.go{justify-self:start;font:inherit;font-size:13px;font-weight:500;color:var(--accent);background:transparent;border:1px solid var(--accent);border-radius:6px;padding:5px 10px;cursor:pointer}
+
+/* flashcards */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.chip{font:inherit;font-size:13px;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.bar{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:12px;color:var(--muted);font-size:13px}
+.prog{flex:1;min-width:120px;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--ok);width:0}
+.card{width:100%;min-height:260px;text-align:left;font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px 24px;cursor:pointer;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.card .tag{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.card .q{font-family:var(--f-head);font-size:clamp(20px,3.4vw,26px);line-height:1.25;text-wrap:balance}
+.card .a{font-size:16px;white-space:pre-line;max-width:65ch}
+.card .ref{font-size:13px;color:var(--muted)}
+.card.back{background:var(--mark-bg);border-color:var(--mark)}
+.hint{font-size:13px;color:var(--muted)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.actions button{font:inherit;font-weight:500;border-radius:6px;padding:9px 14px;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
+.actions .ok{background:var(--ok);color:#fff;border-color:var(--ok)}
+.actions .no{border-color:var(--warn);color:var(--warn)}
+
+/* sources */
+.src{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.src li{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 14px;display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;align-items:baseline}
+.src a{color:var(--accent);word-break:break-word}
+.src span{min-width:0}
+.src small{color:var(--muted);display:block}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>Leis do Escrevente TJ-SP</h1>
+  <p>Edital 02/2026 (Vunesp), prova em 14/03/2027. Bloco II, Conhecimentos em Direito, 30 questões. Mapa mental por lei, com os artigos exatos do edital, e flashcards para revisar.</p>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Seções">
+  <button role="tab" aria-selected="true" data-tab="mapa">Mapa mental</button>
+  <button role="tab" aria-selected="false" data-tab="cards">Flashcards</button>
+  <button role="tab" aria-selected="false" data-tab="fontes">Texto original</button>
+</nav>
+
+<section class="panel" id="mapa">
+  <div class="note"><b>Antes de estudar:</b> os resumos e cards abaixo explicam a lei com minhas palavras. O texto literal dos artigos está na aba “Texto original”, com os links oficiais. A Vunesp cobra muito a letra da lei, então leia o artigo depois do card.</div>
+  <div class="root">Conhecimentos em Direito</div>
+  <ul class="tree" id="tree"></ul>
+</section>
+
+<section class="panel" id="cards" hidden>
+  <div class="chips" id="chips"></div>
+  <div class="bar"><span id="count"></span><div class="prog"><i id="progbar"></i></div><span id="known"></span></div>
+  <button class="card" id="card" aria-live="polite"></button>
+  <div class="actions">
+    <button id="prev">Anterior</button>
+    <button id="flip">Virar</button>
+    <button id="next">Próximo</button>
+    <button class="no" id="review">Revisar depois</button>
+    <button class="ok" id="gotit">Já sei</button>
+    <button id="shuffle">Embaralhar</button>
+    <button id="reset">Zerar progresso</button>
+  </div>
+  <p class="hint">Atalhos: espaço vira o card, setas trocam de card.</p>
+</section>
+
+<section class="panel" id="fontes" hidden>
+  <div class="note"><b>Por que o texto literal não está aqui:</b> o site do Planalto não abre no ambiente em que eu trabalho, e o vade-mécum do TJ-SP não pôde ser copiado literalmente pela ferramenta de leitura. Prefiro não reescrever artigos de memória, porque um número trocado vira erro de prova. Use os links abaixo; se você me enviar os PDFs, monto uma versão com o texto dos artigos do edital ao lado de cada card.</div>
+  <ul class="src" id="src"></ul>
+</section>
+</div>
+
+<script>
+var LAWS = {
+  CP:{n:"Código Penal",s:"CP",art:"arts. 293 a 305; 307; 308; 311-A; 312 a 317; 319 a 333; 336 e 337; 339 a 347; 357 e 359",
+    sum:"Parte especial: crimes contra a fé pública (falsificações), contra a Administração Pública (praticados por funcionário e por particular) e contra a administração da Justiça.",
+    twigs:[["Fé pública","Falsificar papéis públicos (293), documento público (297) e particular (298), falsidade ideológica (299), uso de documento falso (304), supressão de documento (305), falsa identidade (307), fraude em certame de interesse público (311-A)."],
+           ["Funcionário contra a Administração","Peculato (312, 313), inserção de dados falsos em sistema (313-A), extravio de documento (314), concussão (316), corrupção passiva (317), prevaricação (319), advocacia administrativa (321)."],
+           ["Particular contra a Administração","Usurpação de função (328), resistência (329), desobediência (330), desacato (331), tráfico de influência (332), corrupção ativa (333)."],
+           ["Administração da Justiça","Denunciação caluniosa (339), falso testemunho (342), coação no curso do processo (344), fraude processual (347), exploração de prestígio (357), desobediência a decisão judicial sobre perda ou suspensão de direito (359)."]]},
+  CPP:{n:"Código de Processo Penal",s:"CPP",art:"arts. 251 a 258; 261 a 267; 274; 351 a 372; 394 a 497; 531 a 538; 541 a 548; 574 a 667",
+    sum:"Como o processo criminal anda: impedimentos e suspeição, defensor, citações e intimações, procedimentos (comum e júri), restauração de autos, recursos e habeas corpus.",
+    twigs:[["Juiz e auxiliares","Polícia das audiências (251), impedimento e suspeição (252 a 258), defensor (261 a 267), serventuários (274)."],
+           ["Citações e intimações","Citação, intimação e notificação (351 a 372): quem faz, como faz, quando é por edital."],
+           ["Procedimentos","Ordinário, sumário e sumaríssimo (394), resposta à acusação, absolvição sumária, audiência, sentença (394 a 405); Tribunal do Júri (406 a 497)."],
+           ["Recursos e ações","Recursos em geral, RESE, apelação, embargos, revisão criminal e habeas corpus (574 a 667)."]]},
+  JE:{n:"Lei 9.099/1995 (Juizados Especiais)",s:"L9.099",art:"Direito Penal: arts. 60 a 83, 88 e 89 · Processual Civil: arts. 3º a 19",
+    sum:"Duas pontas na mesma lei: o Juizado Cível (causas simples, rito oral) e o Juizado Criminal (infrações de menor potencial ofensivo, com composição e transação).",
+    twigs:[["Cível (3º a 19)","Competência, critérios (oralidade, simplicidade, informalidade, economia, celeridade), partes, pedido, citação, audiência de conciliação."],
+           ["Criminal (60 a 83)","Infração de menor potencial ofensivo, termo circunstanciado, composição civil (74), transação penal (76), rito sumaríssimo, apelação."],
+           ["Arts. 88 e 89","Representação em lesões leves e culposas; suspensão condicional do processo."]]},
+  FP:{n:"Lei 12.153/2009 (Juizados da Fazenda)",s:"L12.153",art:"toda a lei",
+    sum:"Juizado Especial da Fazenda Pública: causas cíveis contra Estados, DF, Municípios e suas entidades, até 60 salários mínimos.",
+    twigs:[["Competência","Valor até 60 SM; competência absoluta onde instalado; lista de causas excluídas."],
+           ["Partes e prazos","Autor: pessoa física, microempresa e EPP. Sem prazo diferenciado para o poder público."],
+           ["Pagamento","RPV para condenações até o teto de 60 SM."]]},
+  CPC:{n:"Código de Processo Civil",s:"CPC",art:"arts. 144 a 155; 188 a 275; 294 a 311; 318 a 538; 994 a 1026",
+    sum:"Processo civil na prática do cartório: auxiliares da Justiça, atos e prazos, comunicação dos atos, tutela provisória, procedimento comum, cumprimento de sentença e recursos.",
+    twigs:[["Juiz e auxiliares (144 a 155)","Impedimento, suspeição, escrivão/chefe de secretaria, oficial de justiça, perito."],
+           ["Atos e prazos (188 a 275)","Forma, tempo e lugar dos atos; prazos; citação e intimação; cartas; nulidades."],
+           ["Tutela provisória (294 a 311)","Urgência (cautelar e antecipada) e evidência."],
+           ["Procedimento comum (318 a 512) e cumprimento de sentença (513 a 538)","Petição inicial, contestação, provas, sentença, coisa julgada, cumprimento."],
+           ["Recursos (994 a 1026)","Disposições gerais, apelação, agravo, embargos de declaração."]]},
+  CF:{n:"Constituição Federal",s:"CF",art:"Título II, Caps. I, II e III · Título III, Cap. VII, Seções I e II · art. 92",
+    sum:"Direitos individuais e coletivos (art. 5º), direitos sociais (6º a 11), nacionalidade (12 e 13), Administração Pública e servidores (37 a 41) e órgãos do Judiciário (92).",
+    twigs:[["Art. 5º","Garantias: inafastabilidade, devido processo, contraditório, presunção de inocência, habeas corpus, mandado de segurança, habeas data."],
+           ["Arts. 6º a 11","Direitos sociais e dos trabalhadores."],
+           ["Arts. 12 e 13","Brasileiros natos e naturalizados; símbolos."],
+           ["Arts. 37 a 41","Princípios da Administração, concurso público, responsabilidade do Estado, estabilidade."],
+           ["Art. 92","Órgãos do Poder Judiciário."]]},
+  EST:{n:"Estatuto dos Funcionários SP (Lei 10.261/68)",s:"Lei 10.261",art:"arts. 1º a 86; 171 a 175; 239 a 323",
+    sum:"Regime jurídico do servidor paulista: provimento do cargo, deveres e proibições, penas disciplinares, sindicância e processo administrativo, prescrição, revisão.",
+    twigs:[["Disposições gerais e provimento (1º a 86)","Conceitos, requisitos, nomeação, posse, exercício, estágio probatório."],
+           ["Arts. 171 a 175","Trecho previsto no edital; leia o texto integral no site da Alesp."],
+           ["Deveres e proibições (239 a 250)","O que o servidor deve e não pode fazer."],
+           ["Penas (251 a 263)","Repreensão, suspensão, multa, demissão, demissão a bem do serviço público, cassação de aposentadoria ou disponibilidade; prescrição."],
+           ["Procedimento disciplinar (264 a 323)","Providências preliminares, sindicância, processo administrativo, revisão."]]},
+  LIA:{n:"Lei 8.429/1992 (Improbidade)",s:"L8.429",art:"toda a lei, com alterações da Lei 14.230/2021",
+    sum:"Pune o agente público que enriquece ilicitamente, causa dano ao erário ou viola princípios da Administração. Exige dolo e tem rol taxativo.",
+    twigs:[["Três espécies","Enriquecimento ilícito (9º), dano ao erário (10), violação de princípios (11)."],
+           ["Sanções (12)","Ressarcimento, perda de bens e função, multa civil, proibição de contratar, suspensão de direitos políticos."],
+           ["Processo e prescrição","Ação própria, prescrição de 8 anos contada do fato."]]},
+  PCD:{n:"Estatuto da Pessoa com Deficiência (Lei 13.146/2015)",s:"L13.146",art:"arts. 1º a 13; 34 a 38 (cai em Atualidades)",
+    sum:"Lei Brasileira de Inclusão: conceito de deficiência, igualdade, capacidade civil, atendimento prioritário e direito ao trabalho.",
+    twigs:[["Arts. 1º a 13","Finalidade, conceito (2º), definições (3º), igualdade, atendimento prioritário, direito à vida e ao consentimento."],
+           ["Arts. 34 a 38","Direito ao trabalho, habilitação e colocação competitiva."]]},
+  INT:{n:"Legislação Interna do TJ-SP",s:"Interna",art:"Res. 850/2021; Res. 963/2025; LC 1.111/2010; Regimento Interno; Normas da CGJ (trechos do Tomo I)",
+    sum:"Normas do próprio Tribunal. É onde a Vunesp tem cobrado mais profundidade. Estes cards cobrem só o que consegui confirmar; falta texto para o resto.",
+    twigs:[["Res. 850/2021","Teletrabalho."],["Res. 963/2025","Governança e uso do eproc."],["LC 1.111/2010","Plano de cargos e carreiras; remoção."],["Regimento Interno e Normas da CGJ","Estudar direto nos textos oficiais."]]}
+};
+
+var CARDS = [
+// Código Penal
+["CP","Peculato (art. 312): qual a ideia central e a pena?","Funcionário público que se apropria de dinheiro, valor ou bem que tem em razão do cargo, ou o desvia em proveito próprio ou alheio.\nPena: reclusão de 2 a 12 anos e multa. Peculato-furto (§1º): subtrai o bem aproveitando-se da facilidade do cargo.","CP art. 312"],
+["CP","Peculato culposo: qual a pena e o que acontece se houver reparação do dano?","Detenção de 3 meses a 1 ano. Se o agente repara o dano antes da sentença irrecorrível, extingue-se a punibilidade; se repara depois, a pena é reduzida pela metade.","CP art. 312, §§ 2º e 3º"],
+["CP","Peculato mediante erro de outrem (art. 313).","O funcionário se apropria de dinheiro ou utilidade que recebeu por erro de outra pessoa, no exercício do cargo. Reclusão de 1 a 4 anos e multa.","CP art. 313"],
+["CP","Inserção de dados falsos em sistema de informações (art. 313-A).","Inserir ou facilitar a inserção de dados falsos, alterar ou excluir dados corretos nos sistemas da Administração, para obter vantagem ou causar dano. Reclusão de 2 a 12 anos e multa. Crime próprio de funcionário autorizado, cobrado por quem trabalha em cartório.","CP art. 313-A"],
+["CP","Extravio, sonegação ou inutilização de documento (art. 314).","Funcionário que extravia livro oficial ou documento de que tem guarda, sonega ou inutiliza, total ou parcialmente. Reclusão de 1 a 4 anos, se o fato não constitui crime mais grave (crime subsidiário).","CP art. 314"],
+["CP","Concussão x corrupção passiva: qual a diferença?","Concussão (316): o funcionário EXIGE vantagem indevida. Corrupção passiva (317): SOLICITA, RECEBE ou aceita promessa de vantagem. Ambas com reclusão de 2 a 12 anos e multa. Na corrupção, a pena aumenta de um terço se, em razão da vantagem, ele retarda ou deixa de praticar ato de ofício, ou o pratica infringindo dever funcional.","CP arts. 316 e 317"],
+["CP","Excesso de exação (art. 316, §1º).","Exigir tributo ou contribuição social que sabe ou deveria saber indevido, ou empregar na cobrança meio vexatório ou gravoso não autorizado em lei. Reclusão de 3 a 8 anos e multa.","CP art. 316, §1º"],
+["CP","Corrupção passiva privilegiada (art. 317, §2º).","Praticar, deixar de praticar ou retardar ato de ofício, com infração de dever funcional, cedendo a pedido ou influência de outrem. Detenção de 3 meses a 1 ano ou multa.","CP art. 317, §2º"],
+["CP","Prevaricação (art. 319).","Retardar ou deixar de praticar ato de ofício, ou praticá-lo contra disposição legal, para satisfazer interesse ou sentimento pessoal. Detenção de 3 meses a 1 ano e multa. O que a separa da corrupção: não há vantagem, o motivo é pessoal.","CP art. 319"],
+["CP","Condescendência criminosa (320) e advocacia administrativa (321).","320: o superior que, por indulgência, deixa de responsabilizar subordinado que cometeu infração, ou não leva o fato ao conhecimento da autoridade competente.\n321: patrocinar interesse privado perante a Administração, valendo-se da qualidade de funcionário.","CP arts. 320 e 321"],
+["CP","Quem é funcionário público para fins penais?","Quem, embora transitoriamente ou sem remuneração, exerce cargo, emprego ou função pública (art. 327, caput). Equipara-se quem trabalha em entidade paraestatal ou em empresa prestadora de serviço contratada para atividade típica da Administração (§1º). A pena aumenta de um terço para os ocupantes de cargo em comissão ou função de direção ou assessoramento (§2º).","CP art. 327"],
+["CP","Desacato (art. 331) e desobediência (art. 330): diferença.","Desobediência: descumprir ordem legal de funcionário público (detenção de 15 dias a 6 meses e multa). Desacato: desacatar funcionário no exercício da função ou em razão dela (detenção de 6 meses a 2 anos ou multa).","CP arts. 330 e 331"],
+["CP","Corrupção ativa (art. 333) e tráfico de influência (art. 332).","Corrupção ativa: o PARTICULAR oferece ou promete vantagem indevida a funcionário para que pratique, omita ou retarde ato de ofício (reclusão de 2 a 12 anos). Tráfico de influência: solicitar, exigir, cobrar ou obter vantagem a pretexto de influir em ato de funcionário (reclusão de 2 a 5 anos).","CP arts. 332 e 333"],
+["CP","Falsificação de documento público x falsidade ideológica.","Falsificação (297): mexe na FORMA, cria ou altera o documento materialmente (reclusão de 2 a 6 anos e multa, com aumento de um sexto se o agente é funcionário e se prevalece do cargo).\nFalsidade ideológica (299): o documento é verdadeiro, mas o CONTEÚDO é falso, por omissão ou inserção de declaração (reclusão de 1 a 5 anos se público, de 1 a 3 se particular).","CP arts. 297 e 299"],
+["CP","Uso de documento falso (art. 304).","Quem usa os papéis falsificados ou alterados a que se referem os arts. 297 a 302 responde com a mesma pena do crime de falso correspondente.","CP art. 304"],
+["CP","Falso testemunho (342) e denunciação caluniosa (339).","Falso testemunho: afirmar falsidade, negar ou calar a verdade como testemunha, perito, contador, tradutor ou intérprete (reclusão de 2 a 4 anos e multa).\nDenunciação caluniosa: dar causa a investigação ou processo contra alguém, imputando-lhe crime de que o sabe inocente (reclusão de 2 a 8 anos e multa).","CP arts. 339 e 342"],
+["CP","Fraude processual (art. 347).","Inovar artificiosamente, na pendência de processo civil ou administrativo, o estado de lugar, coisa ou pessoa, para induzir a erro o juiz ou o perito. Detenção de 3 meses a 2 anos e multa. Se o processo é penal, a pena é aplicada em dobro.","CP art. 347"],
+["CP","Fraudes em certames de interesse público (art. 311-A).","Utilizar ou divulgar, indevidamente, conteúdo sigiloso de concurso público, vestibular, avaliação ou exame, para beneficiar a si ou a outrem ou comprometer a credibilidade do certame. Reclusão de 1 a 4 anos e multa. Tema que combina com o seu concurso.","CP art. 311-A"],
+// CPP
+["CPP","Impedimento x suspeição do juiz: como separar?","Impedimento (art. 252): hipóteses objetivas, em que o juiz não pode atuar, por exemplo ter funcionado antes no processo como advogado, perito ou testemunha, ou ser parte o cônjuge ou parente próximo.\nSuspeição (art. 254): hipóteses subjetivas que comprometem a imparcialidade, como amizade íntima ou inimizade capital com a parte, ou ser credor ou devedor dela.","CPP arts. 252 e 254"],
+["CPP","Defensor (art. 261): regra de ouro.","Nenhum acusado, ainda que ausente ou foragido, será processado ou julgado sem defensor. Se não tiver advogado, o juiz nomeia defensor dativo. A defesa técnica deve ser efetiva e a dispensa pelo acusado não é aceita.","CPP art. 261"],
+["CPP","Quais são os procedimentos (art. 394)?","Comum (ordinário, sumário, sumaríssimo) e especiais.\nOrdinário: crime com pena máxima igual ou superior a 4 anos de privação de liberdade.\nSumário: crime com pena máxima inferior a 4 anos.\nSumaríssimo: infrações de menor potencial ofensivo (Lei 9.099/95).","CPP art. 394"],
+["CPP","Resposta à acusação: prazo e o que vem depois.","O acusado é citado para responder à acusação por escrito no prazo de 10 dias (art. 396). O juiz pode absolver sumariamente (397) nos casos legais ou receber a denúncia e designar audiência. A audiência é una: instrução, debates e julgamento, em regra em até 60 dias (art. 400).","CPP arts. 396, 397 e 400"],
+["CPP","Alegações finais e sentença no rito ordinário.","Debates orais por 20 minutos para cada parte, prorrogáveis por mais 10 (art. 403). Em casos complexos, o juiz pode converter em memoriais escritos, no prazo de 5 dias sucessivos. Sentença em 10 dias.","CPP art. 403"],
+["CPP","Tribunal do Júri: composição e quórum.","O Conselho de Sentença tem 7 jurados, sorteados entre 25 convocados para a sessão. A primeira fase termina na pronúncia, impronúncia, absolvição sumária ou desclassificação. Só a pronúncia leva ao plenário. A resposta do acusado, no rito do júri, é de 10 dias.","CPP arts. 406, 413, 447"],
+["CPP","Prazos recursais principais.","Apelação: 5 dias (art. 593). Razões da apelação: 8 dias (art. 600). RESE: 5 dias, com razões em 2 dias (arts. 586 e 588). Embargos de declaração: 2 dias (art. 619). Embargos infringentes e de nulidade: 10 dias (art. 609, parágrafo único).","CPP arts. 586, 588, 593, 600, 609, 619"],
+["CPP","Recurso em sentido estrito (RESE): para que serve?","Cabe contra decisões listadas em lei (art. 581), como a rejeição da denúncia, a pronúncia e a decisão que concede ou nega fiança. É o recurso de rol taxativo, mas a jurisprudência admite interpretação extensiva.","CPP art. 581"],
+["CPP","Habeas corpus (arts. 647 a 667): quando cabe?","Sempre que alguém sofrer ou estiver ameaçado de sofrer violência ou coação ilegal na sua liberdade de ir e vir. Qualquer pessoa pode impetrar em favor de outra, e a ordem pode ser concedida de ofício pelo juiz ou tribunal.","CPP arts. 647 a 667; CF art. 5º, LXVIII"],
+["CPP","Revisão criminal: finalidade.","Ação que pede a reapreciação de condenação definitiva, em casos como sentença contrária a texto expresso de lei ou à evidência dos autos, falsidade de provas ou descoberta de novas provas de inocência. Pode ser requerida a qualquer tempo e não prejudica o réu (não há reformatio in pejus).","CPP arts. 621 a 631"],
+["CPP","Restauração de autos extraviados (arts. 541 a 548).","Se os autos forem extraviados ou destruídos, procede-se à restauração. O escrivão certifica o desaparecimento, o juiz determina que se juntem certidões e cópias, e a sentença restaurada tem o mesmo valor dos autos originais.","CPP arts. 541 a 548"],
+// Juizados
+["JE","Critérios do Juizado (art. 2º da Lei 9.099).","Oralidade, simplicidade, informalidade, economia processual e celeridade. Busca-se, sempre que possível, a conciliação ou a transação.","L9.099 art. 2º"],
+["JE","Competência cível do Juizado Especial (art. 3º).","Causas cíveis de menor complexidade: valor até 40 salários mínimos, causas de rito sumário do CPC/73 (hoje enumeradas), ação de despejo para uso próprio e ações possessórias sobre imóveis até 40 SM. Excluídas as causas de natureza alimentar, falimentar, fiscal, de interesse da Fazenda Pública e relativas a acidente do trabalho e a estado e capacidade de pessoas.","L9.099 art. 3º"],
+["JE","Assistência de advogado no Juizado Cível (art. 9º).","Causas de até 20 salários mínimos: a parte pode comparecer sem advogado. Acima disso, assistência obrigatória. Recurso: sempre com advogado.","L9.099 art. 9º"],
+["JE","Infração de menor potencial ofensivo (art. 61).","Contravenções penais e crimes cuja pena máxima não seja superior a 2 anos, cumulada ou não com multa (redação da Lei 11.313/2006), com exceção dos casos com procedimento especial.","L9.099 art. 61"],
+["JE","Composição civil x transação penal.","Composição civil (art. 74): acordo entre autor e vítima sobre danos, homologado pelo juiz e com eficácia de título; nas ações de iniciativa privada ou condicionada à representação, acarreta renúncia ao direito de queixa ou representação.\nTransação penal (art. 76): proposta do Ministério Público de pena não privativa de liberdade, aceita pelo autor e pelo defensor.","L9.099 arts. 74 e 76"],
+["JE","Suspensão condicional do processo (art. 89).","Quando a pena mínima cominada for igual ou inferior a 1 ano, o MP, ao oferecer a denúncia, pode propor a suspensão do processo por 2 a 4 anos (período de prova), desde que o acusado não esteja sendo processado nem tenha sido condenado por outro crime e estejam presentes os requisitos da suspensão condicional da pena.","L9.099 art. 89"],
+["JE","Apelação no Juizado Criminal (art. 82).","Da sentença cabe apelação, julgada por turma recursal, no prazo de 10 dias, com as razões já na petição. Embargos de declaração: 5 dias (art. 83).","L9.099 arts. 82 e 83"],
+["FP","Quem pode ser réu e autor no Juizado da Fazenda (Lei 12.153)?","Réus: Estados, Distrito Federal, Territórios e Municípios, bem como autarquias, fundações e empresas públicas a eles vinculadas. Autores: pessoas físicas, microempresas e empresas de pequeno porte. Competência até 60 salários mínimos, absoluta onde o Juizado estiver instalado.","L12.153 arts. 1º a 5º"],
+["FP","Quais causas ficam fora do Juizado da Fazenda?","Mandado de segurança, desapropriação, divisão e demarcação, ação popular, execução fiscal, ações sobre bens imóveis dos entes públicos, improbidade administrativa e direitos difusos e coletivos, entre outras listadas no art. 2º, §1º.","L12.153 art. 2º, §1º"],
+["FP","Prazos e reexame no Juizado da Fazenda.","Não há prazo diferenciado para o poder público (nem em dobro), e não há reexame necessário. Entre a citação e a audiência, o prazo mínimo é de 30 dias. Pagamento por RPV nas condenações até 60 salários mínimos.","L12.153 arts. 7º, 11 e 13"],
+// CPC
+["CPC","Impedimento (art. 144) x suspeição (art. 145) no CPC.","Impedimento: hipóteses objetivas, em que o juiz não pode atuar, como ter funcionado antes como advogado, perito ou membro do MP no processo, ou ser parte o cônjuge ou parente até o terceiro grau. Suspeição: hipóteses de parcialidade, como amizade íntima ou inimizade, ou receber presentes de quem tenha interesse na causa.","CPC arts. 144 e 145"],
+["CPC","Quem são os auxiliares da Justiça?","Escrivão, chefe de secretaria, oficial de justiça, perito, depositário, administrador, intérprete, tradutor, mediador, conciliador judicial, partidor, distribuidor, contabilista e regulador de avarias (art. 149). Escrevente: execução dos atos do escrivão, sob a responsabilidade dele.","CPC arts. 149 a 155"],
+["CPC","Contagem de prazos no CPC.","Os prazos processuais contam-se em dias úteis (art. 219). Exclui-se o dia do começo e inclui-se o do vencimento (art. 224). Os prazos só começam a correr no primeiro dia útil após a intimação ou publicação. Se não houver prazo legal, o juiz fixa; na falta de fixação, 5 dias (art. 218, §3º).","CPC arts. 218, 219 e 224"],
+["CPC","Prazos do juiz e do servidor (arts. 226 e 228).","Juiz: despachos em 5 dias, decisões interlocutórias em 10 e sentenças em 30. Servidor: remeter os autos conclusos em 1 dia e executar os atos em 5 dias, contados da data em que for intimado ou da conclusão.","CPC arts. 226 a 228"],
+["CPC","Citação: formas (art. 246).","Pelo correio (regra, art. 247), por oficial de justiça, pelo escrivão ou chefe de secretaria (se o citando comparece em cartório), por edital e por meio eletrônico. Citação com hora certa se o oficial suspeitar de ocultação (art. 252). Citação por edital: réu em lugar incerto ou ignorado, ou quando inacessível o local (art. 256).","CPC arts. 238, 246 a 259"],
+["CPC","Intimação (art. 269) e cartas (arts. 260 a 268).","Intimação é o ato pelo qual se dá ciência a alguém dos atos e termos do processo. Carta precatória: para ato fora da comarca; rogatória: para o exterior; de ordem: de tribunal a juízo subordinado; arbitral: do árbitro ao Judiciário.","CPC arts. 260 a 275"],
+["CPC","Tutela provisória: quais as espécies (art. 294)?","Tutela de urgência (cautelar ou antecipada, antecedente ou incidental) e tutela de evidência. A urgência exige probabilidade do direito e perigo de dano ou risco ao resultado útil (art. 300). A evidência dispensa o perigo (art. 311).","CPC arts. 294, 300 e 311"],
+["CPC","Prazo de contestação e de recurso.","Contestação: 15 dias (art. 335). Recursos em geral: 15 dias (art. 1.003, §5º), exceto embargos de declaração: 5 dias (art. 1.023). Apelação: arts. 1.009 a 1.014. Agravo de instrumento: rol do art. 1.015.","CPC arts. 335, 1.003, 1.009, 1.015, 1.023"],
+["CPC","Cumprimento de sentença por quantia certa (arts. 523 e 525).","Intimado, o devedor tem 15 dias úteis para pagar. Se não pagar, incidem multa de 10% e honorários de 10%. Passados os 15 dias, começa o prazo, também de 15 dias, para a impugnação (art. 525), sem necessidade de nova intimação e sem penhora prévia.","CPC arts. 523 e 525"],
+// CF
+["CF","Art. 5º: garantias processuais que mais caem.","XXXV: a lei não excluirá da apreciação do Judiciário lesão ou ameaça a direito (inafastabilidade).\nLIV: ninguém será privado da liberdade ou de seus bens sem o devido processo legal.\nLV: contraditório e ampla defesa.\nLVII: presunção de inocência (até o trânsito em julgado).\nLXXIV: assistência jurídica integral e gratuita aos que comprovarem insuficiência de recursos.","CF art. 5º, XXXV, LIV, LV, LVII, LXXIV"],
+["CF","Remédios constitucionais: qual é qual?","Habeas corpus (LXVIII): liberdade de locomoção.\nMandado de segurança (LXIX): direito líquido e certo, não amparado por HC ou HD.\nHabeas data (LXXII): acesso e retificação de informações pessoais.\nMandado de injunção (LXXI): falta de norma regulamentadora.\nAção popular (LXXIII): anular ato lesivo ao patrimônio público, à moralidade, ao meio ambiente e ao patrimônio histórico.","CF art. 5º, LXVIII a LXXIII"],
+["CF","Art. 37: princípios da Administração Pública.","Legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE). Cargos acessíveis a brasileiros e a estrangeiros na forma da lei (I); investidura em cargo efetivo depende de concurso público (II); prazo de validade do concurso de até 2 anos, prorrogável uma vez por igual período (III).","CF art. 37, caput, I a IV"],
+["CF","Responsabilidade do Estado (art. 37, §6º).","As pessoas jurídicas de direito público e as de direito privado prestadoras de serviço público respondem pelos danos que seus agentes, nessa qualidade, causarem a terceiros (responsabilidade objetiva), assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa.","CF art. 37, §6º"],
+["CF","Estabilidade (art. 41).","São estáveis, após 3 anos de efetivo exercício, os servidores nomeados para cargo de provimento efetivo em virtude de concurso público, com avaliação especial de desempenho obrigatória. O servidor estável só perde o cargo por sentença judicial transitada em julgado, processo administrativo com ampla defesa, procedimento de avaliação periódica ou excesso de despesa com pessoal (art. 169, §4º).","CF art. 41"],
+["CF","Art. 92: órgãos do Poder Judiciário.","STF, CNJ, STJ, TST, Tribunais Regionais Federais e Juízes Federais, Tribunais e Juízes do Trabalho, Tribunais e Juízes Eleitorais, Tribunais e Juízes Militares, e Tribunais e Juízes dos Estados, do DF e Territórios.","CF art. 92"],
+["CF","Brasileiros natos x naturalizados (art. 12).","Natos: nascidos na República, ainda que de pais estrangeiros (se não estiverem a serviço de seu país), filhos de brasileiro ou brasileira a serviço do Brasil, e outros casos do inciso I. Naturalizados: os que adquirem a nacionalidade na forma da lei, e os originários de países de língua portuguesa com residência por um ano ininterrupto e idoneidade moral. A lei pode reservar cargos privativos de brasileiro nato (art. 12, §3º).","CF art. 12"],
+// Estatuto SP
+["EST","Conceitos básicos do Estatuto (arts. 3º e 4º).","Funcionário público é a pessoa legalmente investida em cargo público. Cargo público é o conjunto de atribuições e responsabilidades cometidas a um funcionário.","L10.261 arts. 3º e 4º"],
+["EST","Quais são as penas disciplinares (art. 251)?","Repreensão, suspensão, multa, demissão, demissão a bem do serviço público e cassação de aposentadoria ou disponibilidade. Na aplicação, consideram-se a natureza e a gravidade da infração e os danos ao serviço público.","L10.261 art. 251"],
+["EST","Sindicância x processo administrativo.","Sindicância (art. 269): quando a falta pode gerar repreensão, suspensão ou multa.\nProcesso administrativo (art. 270): obrigatório quando a falta pode gerar demissão, demissão a bem do serviço público ou cassação de aposentadoria ou disponibilidade.","L10.261 arts. 269 e 270 (LC 942/2003)"],
+["EST","Prescrição da punibilidade (art. 261).","Prescreve em 2 anos a falta sujeita a repreensão, suspensão ou multa, e em 5 anos a falta sujeita a demissão, demissão a bem do serviço público ou cassação de aposentadoria ou disponibilidade.","L10.261 art. 261"],
+["EST","Deveres e proibições do servidor.","Deveres (art. 241) incluem assiduidade, pontualidade, discrição, urbanidade e lealdade. Proibições (arts. 242 e 243) incluem, por exemplo, referir-se de modo depreciativo às autoridades, retirar documentos da repartição sem autorização, valer-se do cargo para obter vantagem e empregar material do serviço público em serviço particular.","L10.261 arts. 241 a 243"],
+// Improbidade
+["LIA","Três espécies de improbidade (Lei 8.429).","Art. 9º: enriquecimento ilícito, auferir vantagem patrimonial indevida em razão do exercício do cargo.\nArt. 10: lesão ao erário, perda patrimonial, desvio, apropriação ou dilapidação dos bens públicos.\nArt. 11: ato que atenta contra os princípios da Administração, em rol taxativo depois da Lei 14.230/2021.","L8.429 arts. 9º, 10 e 11"],
+["LIA","O que mudou com a Lei 14.230/2021?","Passou a exigir dolo para todas as espécies (a culpa não basta), tornou taxativo o rol do art. 11, estabeleceu prescrição de 8 anos contados do fato e prescrição intercorrente de 4 anos, e reorganizou as sanções.","L8.429 (redação da L14.230/2021)"],
+["LIA","Sanções por espécie (art. 12).","Enriquecimento ilícito: perda de bens, ressarcimento, perda da função, suspensão dos direitos políticos até 14 anos, multa civil até o valor do acréscimo, proibição de contratar até 14 anos.\nDano ao erário: suspensão até 12 anos, multa até o valor do dano, proibição de contratar até 12 anos.\nPrincípios: multa civil de até 24 vezes a remuneração, proibição de contratar até 4 anos (sem suspensão de direitos políticos).","L8.429 art. 12"],
+// PCD
+["PCD","Quem é a pessoa com deficiência (art. 2º)?","Aquela que tem impedimento de longo prazo de natureza física, mental, intelectual ou sensorial, o qual, em interação com uma ou mais barreiras, pode obstruir sua participação plena e efetiva na sociedade em igualdade de condições com as demais pessoas. A avaliação é biopsicossocial.","L13.146 art. 2º"],
+["PCD","Capacidade civil (art. 6º).","A deficiência não afeta a plena capacidade civil da pessoa, inclusive para casar, constituir união estável, exercer direitos sexuais e reprodutivos, decidir sobre número de filhos, conservar a fertilidade, exercer o direito de família e adotar, e de ser adotada em igualdade de condições.","L13.146 art. 6º"],
+["PCD","Atendimento prioritário (art. 9º).","A pessoa com deficiência tem direito a receber atendimento prioritário, sobretudo em serviços de proteção e socorro em emergência, atendimento em órgãos públicos e instituições financeiras, disponibilização de recursos de acessibilidade, acesso a informações e outros previstos.","L13.146 art. 9º"],
+["PCD","Direito ao trabalho (arts. 34 a 38).","Direito ao trabalho de livre escolha e aceitação, em ambiente acessível e inclusivo, em igualdade de oportunidades. A inclusão no trabalho é feita por habilitação e reabilitação profissional e por colocação competitiva no mercado, com apoio quando necessário.","L13.146 arts. 34 a 38"],
+// Interna
+["INT","Resolução TJSP 850/2021: o que regula?","O teletrabalho no TJSP. Aplica-se a cargos como escrevente técnico judiciário e assistente judiciário, em primeira e segunda instância. Há previsão de limite de servidores por unidade (até 50% em unidades judiciais e até 70% em unidades administrativas, conforme a redação original) e de revezamento com intervalo mínimo de 90 dias quando houver mais interessados do que vagas. A resolução foi atualizada depois (Res. 864/2022). Confira a redação vigente.","Res. TJSP 850/2021"],
+["INT","LC 1.111/2010: o que institui?","O Plano de Cargos e Carreiras dos servidores do Tribunal de Justiça do Estado de São Paulo. O edital cita expressamente o processo de remoção dos servidores do quadro nessa lei. Para os artigos de remuneração, evolução funcional e remoção, leia o texto integral.","LC 1.111/2010"]
+];
+
+var $=function(s){return document.querySelector(s)};
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+
+// Tabs
+var tabs=document.querySelectorAll('.tabs button');
+function showTab(id){
+  tabs.forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===id)});
+  ['mapa','cards','fontes'].forEach(function(p){document.getElementById(p).hidden=(p!==id)});
+  window.scrollTo(0,0);
+}
+tabs.forEach(function(b){b.addEventListener('click',function(){showTab(b.dataset.tab)})});
+
+// Mind map
+var tree=$('#tree');
+Object.keys(LAWS).forEach(function(k){
+  var L=LAWS[k],n=CARDS.filter(function(c){return c[0]===k}).length;
+  var li=document.createElement('li');
+  var tw=L.twigs.map(function(t){return '<li><b>'+esc(t[0])+'.</b> '+esc(t[1])+'</li>'}).join('');
+  li.innerHTML='<details class="branch"><summary><span class="bname">'+esc(L.n)+'</span><span class="bart">'+n+' cards</span></summary><div class="bbody"><p style="margin:0">'+esc(L.sum)+'</p><div class="edital"><b>No edital:</b> '+esc(L.art)+'</div><ul class="twig">'+tw+'</ul>'+(n?'<button class="go" data-law="'+k+'">Estudar os '+n+' cards</button>':'')+'</div></details>';
+  tree.appendChild(li);
+});
+tree.addEventListener('click',function(e){
+  var b=e.target.closest('.go'); if(!b)return;
+  setFilter(b.dataset.law); showTab('cards');
+});
+
+// Flashcards
+var filter='ALL', order=[], idx=0, back=false;
+var known={}; try{known=JSON.parse(ls('tjsp_known')||'{}')}catch(e){known={}}
+function key(c){return c[0]+'|'+c[1]}
+function build(){
+  order=[];
+  CARDS.forEach(function(c,i){if(filter==='ALL'||c[0]===filter)order.push(i)});
+  idx=0;back=false;render();
+}
+function renderChips(){
+  var h='<button class="chip" data-f="ALL" aria-pressed="'+(filter==='ALL')+'">Todas ('+CARDS.length+')</button>';
+  Object.keys(LAWS).forEach(function(k){
+    var n=CARDS.filter(function(c){return c[0]===k}).length; if(!n)return;
+    h+='<button class="chip" data-f="'+k+'" aria-pressed="'+(filter===k)+'">'+esc(LAWS[k].s)+' ('+n+')</button>';
+  });
+  $('#chips').innerHTML=h;
+}
+function setFilter(f){filter=f;renderChips();build()}
+$('#chips').addEventListener('click',function(e){var b=e.target.closest('.chip');if(b)setFilter(b.dataset.f)});
+function render(){
+  var card=$('#card');
+  if(!order.length){card.innerHTML='<div class="q">Nenhum card nesse filtro.</div>';return}
+  var c=CARDS[order[idx]];
+  card.className='card'+(back?' back':'');
+  var tag=esc(LAWS[c[0]].n)+(known[key(c)]?' · já sei':'');
+  card.innerHTML=back
+    ? '<div class="tag">Resposta</div><div class="a">'+esc(c[2])+'</div><div class="ref">'+esc(c[3])+'</div>'
+    : '<div class="tag">'+tag+'</div><div class="q">'+esc(c[1])+'</div><div class="hint">Toque para ver a resposta</div>';
+  $('#count').textContent='Card '+(idx+1)+' de '+order.length;
+  var k=order.filter(function(i){return known[key(CARDS[i])]}).length;
+  $('#known').textContent=k+' já sei';
+  $('#progbar').style.width=(100*k/order.length)+'%';
+}
+function go(d){if(!order.length)return;idx=(idx+d+order.length)%order.length;back=false;render()}
+function flip(){back=!back;render()}
+$('#card').addEventListener('click',flip);
+$('#flip').addEventListener('click',flip);
+$('#prev').addEventListener('click',function(){go(-1)});
+$('#next').addEventListener('click',function(){go(1)});
+$('#gotit').addEventListener('click',function(){if(!order.length)return;known[key(CARDS[order[idx]])]=1;ls('tjsp_known',JSON.stringify(known));go(1)});
+$('#review').addEventListener('click',function(){if(!order.length)return;delete known[key(CARDS[order[idx]])];ls('tjsp_known',JSON.stringify(known));go(1)});
+$('#shuffle').addEventListener('click',function(){for(var i=order.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=order[i];order[i]=order[j];order[j]=t}idx=0;back=false;render()});
+$('#reset').addEventListener('click',function(){known={};ls('tjsp_known','{}');render()});
+document.addEventListener('keydown',function(e){
+  if($('#cards').hidden)return;
+  if(e.key===' '){e.preventDefault();flip()}
+  else if(e.key==='ArrowRight')go(1);
+  else if(e.key==='ArrowLeft')go(-1);
+});
+
+// Sources
+var SRC=[
+ ["Edital 02/2026 (PDF oficial, Anexo VIII)","Conteúdo programático completo","https://dhg1h5j42swfq.cloudfront.net/2026/10/20101659/tjsp2607_224_20261019111625-pdf.pdf"],
+ ["Vade-mécum do TJ-SP (Estratégia, edital 2025)","Leis compiladas, 295 páginas; confira se o recorte bate com o edital 2026","https://dhg1h5j42swfq.cloudfront.net/2025/07/15110255/vm-tjsp-escrevente-2025.pdf"],
+ ["Código Penal","Planalto","https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"],
+ ["Código de Processo Penal","Planalto","https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689compilado.htm"],
+ ["Código de Processo Civil (Lei 13.105/2015)","Planalto","https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm"],
+ ["Lei 9.099/1995","Planalto","https://www.planalto.gov.br/ccivil_03/leis/l9099.htm"],
+ ["Lei 12.153/2009","Planalto","https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12153.htm"],
+ ["Constituição Federal","Planalto","https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"],
+ ["Lei 8.429/1992 (Improbidade)","Planalto","https://www.planalto.gov.br/ccivil_03/leis/l8429.htm"],
+ ["Lei 13.146/2015 (Estatuto da Pessoa com Deficiência)","Planalto","https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm"],
+ ["Lei 10.261/1968 (Estatuto dos Funcionários, SP)","Assembleia Legislativa de SP: busque pelo número da lei","https://www.al.sp.gov.br/legislacao/"],
+ ["Resolução TJSP 850/2021","Link do próprio edital","https://esaj.tjsp.jus.br/gcn-frontend-vue/legislacao/find/196070"],
+ ["Resolução TJSP 963/2025","Link do próprio edital","https://esaj.tjsp.jus.br/gcn-frontend-vue/legislacao/find/229313"],
+ ["Normas Judiciais da Corregedoria Geral da Justiça","Tomo I, capítulos II, III e XI (trechos do edital)","https://www.tjsp.jus.br/Corregedoria/Comunicados/NormasJudiciais"],
+ ["Regimento Interno do TJSP","PDF do Tribunal","https://www.tjsp.jus.br/Download/Portal/Biblioteca/Biblioteca/Legislacao/RegimentoInternoTJSP.pdf?d=1751054637027"]
+];
+$('#src').innerHTML=SRC.map(function(s){return '<li><span><b>'+esc(s[0])+'</b><small>'+esc(s[1])+'</small></span><a href="'+s[2]+'" target="_blank" rel="noopener">Abrir</a></li>'}).join('');
+
+renderChips();build();
+</script>
+
+</body></html>
